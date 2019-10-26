@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>TUT Employee Example</title>
+    </h:head>
+    <h:body>
+    	<h2>Post your tweet</h2>
+    	<H:form >
+    	
+    		<h:panelGrid columns="2" >
+    		<h:inputTextarea id="tweetBody" value="#{tweetmanagercontroller.tweetmanager.tweetBody}" cols="36" rows="3"/> 
+    		<h:inputText id="userName" value="#{tweetmanagercontroller.tweetmanager.user_name}" cols="36" rows="3"/>   
+    	   </h:panelGrid>
+    	   <h:commandButton value="Post" action="#{tweetmanagercontroller.addNew()}"></h:commandButton>
+    	</h:form>
+    </h:body>
+</html>
